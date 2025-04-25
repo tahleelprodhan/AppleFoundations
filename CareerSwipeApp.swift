@@ -2,10 +2,12 @@ import SwiftUI
 
 @main
 struct CareerSwipeApp: App {
+    @StateObject private var viewModel = ProfessionViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(ProfessionViewModel())
+            RootView()
+                .environmentObject(viewModel)
         }
     }
 }

@@ -1,105 +1,117 @@
 import SwiftUI
-import Combine
 
 class ProfessionViewModel: ObservableObject {
     @Published var professions: [Profession] = []
     @Published var currentIndex: Int = 0
     @Published var likes: [Profession] = []
     @Published var dislikes: [Profession] = []
-    @Published var selectedProfession: Profession?
-    @Published var showingLearnMore = false
-    @Published var showingShare = false
+    @Published var didFinish: Bool = false
+
+    private var history: [Action] = []
+
+    enum Action {
+        case liked(Profession)
+        case disliked(Profession)
+    }
 
     init() {
-        loadCSV()
+        loadProfessions()
     }
 
     var currentProfession: Profession? {
-        guard currentIndex < professions.count else { return nil }
+        guard professions.indices.contains(currentIndex) else { return nil }
         return professions[currentIndex]
     }
 
-    var toGoCount: Int { professions.count - currentIndex }
-    var top3: [Profession] {
-        let counts = Dictionary(grouping: likes, by: { $0 })
-            .mapValues(\.count)
-        return counts
-            .sorted { $0.value > $1.value }
-            .prefix(3)
-            .map(\.key)
+    var toGoCount: Int {
+        professions.count - currentIndex
     }
+
+    var likesCount: Int { likes.count }
+    var dislikesCount: Int { dislikes.count }
 
     func like() {
         guard let prof = currentProfession else { return }
         likes.append(prof)
-        undoStack.append((prof, .like))
+        history.append(.liked(prof))
         advance()
     }
 
     func dislike() {
         guard let prof = currentProfession else { return }
         dislikes.append(prof)
-        undoStack.append((prof, .dislike))
+        history.append(.disliked(prof))
         advance()
     }
 
     func undo() {
-        guard let (prof, action) = undoStack.popLast() else { return }
-        switch action {
-        case .like:
-            likes.removeLast()
-        case .dislike:
-            dislikes.removeLast()
+        guard let last = history.popLast() else { return }
+        switch last {
+        case .liked(let prof):
+            if let idx = likes.lastIndex(of: prof) {
+                likes.remove(at: idx)
+            }
+        case .disliked(let prof):
+            if let idx = dislikes.lastIndex(of: prof) {
+                dislikes.remove(at: idx)
+            }
         }
         currentIndex = max(currentIndex - 1, 0)
+        didFinish = false
+    }
+
+    private func advance() {
+        // Move to next index (this may go one past the end)
+        currentIndex += 1
+
+        // If they've processed all items, fire the finish flag
+        if (likes.count + dislikes.count) >= professions.count {
+            didFinish = true
+        }
     }
 
     func resetLikes() {
         likes.removeAll()
+        didFinish = false
     }
 
     func resetDislikes() {
         dislikes.removeAll()
+        didFinish = false
     }
 
-    func shareTopResults() {
-        showingShare = true
+    func topResults() -> [Profession] {
+        let grouped = Dictionary(grouping: likes, by: { $0 })
+        let sorted = grouped.sorted { $0.value.count > $1.value.count }
+        return sorted.prefix(3).map { $0.key }
     }
 
-    var topResultsEmailBody: String {
-        var body = "Just wanted to share my top 3 favorite professions.\n\n"
-        for p in top3 {
-            body += "\(p.title)\n"
+    // MARK: - CSV Loading
+
+    private func loadProfessions() {
+        guard let url = Bundle.main.url(forResource: "professions", withExtension: "csv") else {
+            print("professions.csv not found in bundle")
+            return
         }
-        return body
-    }
-
-    // MARK: - Private
-
-    private enum Action { case like, dislike }
-    private var undoStack: [(Profession, Action)] = []
-
-    private func advance() {
-        currentIndex += 1
-    }
-
-    private func loadCSV() {
-        guard let url = Bundle.main.url(forResource: "professions", withExtension: "csv"),
-              let data = try? Data(contentsOf: url),
-              let str = String(data: data, encoding: .utf8) else { return }
-
-        let lines = str.components(separatedBy: "\n").filter { !$0.isEmpty }
-        professions = lines.compactMap { line in
-            let parts = line.components(separatedBy: ",")
-            guard parts.count == 5,
-                  let idx = Int(parts[0]) else { return nil }
-            return Profession(
-                professionIndex: idx,
-                title: parts[1],
-                description: parts[2],
-                imageName: parts[3],
-                extendedDescription: parts[4]
-            )
+        do {
+            let content = try String(contentsOf: url)
+            let lines = content.components(separatedBy: "\n")
+            for (i, line) in lines.enumerated() {
+                if i == 0 { continue }  // skip header
+                let parts = line.components(separatedBy: ",")
+                guard parts.count >= 5,
+                      let idx = Int(parts[0]) else { continue }
+                let prof = Profession(
+                    index: idx,
+                    title: parts[1],
+                    description: parts[2],
+                    imageName: parts[3],
+                    extendedDescription: parts[4]
+                )
+                professions.append(prof)
+            }
+        } catch {
+            print("Error loading CSV: \(error)")
         }
     }
 }
