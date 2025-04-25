@@ -1,0 +1,101 @@
+Profession Index Number,Profession Title,Profession Description,Profession Image,Profession Extended Description
+99,Photographer,Captures still images for creative or commercial use,photographer,Photographers create visual stories through lenses
+14,Colorist,Adjusts color and tone for visual consistency in film,colorist,Colorists use tools like DaVinci Resolve for grading
+63,Graphic Designer,Designs visual content for print and digital media,graphic_designer,Graphic designers use Adobe Photoshop and Illustrator to create visual assets
+66,Storyboard Artist,Draws visual storyboards to plan films and animations,storyboard_artist,They visualize scripts and help directors plan production
+90,Cinematographer,Manages camera and lighting for film or TV shoots,cinematographer,Cinematographers shape the visual look of a project
+53,Voice Actor,Provides voices for characters in animation and games,voice_actor,Voice actors express emotion and character through speech
+31,Digital Painter,Creates digital illustrations and concept art,digital_painter,Digital painters use tablets and painting software
+47,Motion Graphics Designer,Creates animated graphics and visual effects,motion_graphics,Motion designers use typography and video animation tools
+64,3D Modeler,Builds 3D characters and environments for games and films,3d_modeler,3D modelers use Blender Maya or ZBrush to create visual models
+36,Game Designer,Designs game mechanics and narratives,game_designer,Game designers write storylines and create game logic
+74,Colorist,Adjusts color and tone for visual consistency in film,colorist,Colorists use tools like DaVinci Resolve for grading
+37,Composer,Writes original music for film TV or games,composer,Composers create music to support storytelling
+55,Production Designer,Designs sets and visual aesthetics of a production,production_designer,They craft immersive environments for film
+25,Sound Designer,Creates sound effects and audio environments for media,sound_designer,Sound designers record mix and edit sound for film and games
+33,Voice Actor,Provides voices for characters in animation and games,voice_actor,Voice actors express emotion and character through speech
+13,Voice Actor,Provides voices for characters in animation and games,voice_actor,Voice actors express emotion and character through speech
+24,3D Modeler,Builds 3D characters and environments for games and films,3d_modeler,3D modelers use Blender Maya or ZBrush to create visual models
+62,Video Editor,Edits and assembles raw footage into finished productions,video_editor,Video editors use Adobe Premiere Pro or Final Cut Pro to structure scenes
+41,Animator,Creates animated images and characters for film and television or video games,animator,Animators work with 2D and 3D images using tools like Maya or Blender
+40,Media Producer,Manages the production of multimedia projects,media_producer,Media producers coordinate creative teams
+1,Animator,Creates animated images and characters for film and television or video games,animator,Animators work with 2D and 3D images using tools like Maya or Blender
+15,Production Designer,Designs sets and visual aesthetics of a production,production_designer,They craft immersive environments for film
+29,Scriptwriter,Writes screenplays for movies TV and digital content,scriptwriter,Scriptwriters craft dialogue plot and story arcs
+2,Video Editor,Edits and assembles raw footage into finished productions,video_editor,Video editors use Adobe Premiere Pro or Final Cut Pro to structure scenes
+97,Composer,Writes original music for film TV or games,composer,Composers create music to support storytelling
+83,Graphic Designer,Designs visual content for print and digital media,graphic_designer,Graphic designers use Adobe Photoshop and Illustrator to create visual assets
+70,Cinematographer,Manages camera and lighting for film or TV shoots,cinematographer,Cinematographers shape the visual look of a project
+91,Digital Painter,Creates digital illustrations and concept art,digital_painter,Digital painters use tablets and painting software
+76,Game Designer,Designs game mechanics and narratives,game_designer,Game designers write storylines and create game logic
+52,VFX Artist,Adds visual effects to films and videos,vfx_artist,VFX artists composite simulate and enhance footage
+50,Cinematographer,Manages camera and lighting for film or TV shoots,cinematographer,Cinematographers shape the visual look of a project
+4,3D Modeler,Builds 3D characters and environments for games and films,3d_modeler,3D modelers use Blender Maya or ZBrush to create visual models
+72,VFX Artist,Adds visual effects to films and videos,vfx_artist,VFX artists composite simulate and enhance footage
+94,Colorist,Adjusts color and tone for visual consistency in film,colorist,Colorists use tools like DaVinci Resolve for grading
+23,Graphic Designer,Designs visual content for print and digital media,graphic_designer,Graphic designers use Adobe Photoshop and Illustrator to create visual assets
+59,Photographer,Captures still images for creative or commercial use,photographer,Photographers create visual stories through lenses
+12,VFX Artist,Adds visual effects to films and videos,vfx_artist,VFX artists composite simulate and enhance footage
+8,Film Director,Leads the creative aspects of film production,film_director,Directors guide artistic vision with actors and production teams
+42,Video Editor,Edits and assembles raw footage into finished productions,video_editor,Video editors use Adobe Premiere Pro or Final Cut Pro to structure scenes
+93,Voice Actor,Provides voices for characters in animation and games,voice_actor,Voice actors express emotion and character through speech
+80,Media Producer,Manages the production of multimedia projects,media_producer,Media producers coordinate creative teams
+68,Film Director,Leads the creative aspects of film production,film_director,Directors guide artistic vision with actors and production teams
+21,Animator,Creates animated images and characters for film and television or video games,animator,Animators work with 2D and 3D images using tools like Maya or Blender
+86,Storyboard Artist,Draws visual storyboards to plan films and animations,storyboard_artist,They visualize scripts and help directors plan production
+39,Photographer,Captures still images for creative or commercial use,photographer,Photographers create visual stories through lenses
+27,Motion Graphics Designer,Creates animated graphics and visual effects,motion_graphics,Motion designers use typography and video animation tools
+9,Scriptwriter,Writes screenplays for movies TV and digital content,scriptwriter,Scriptwriters craft dialogue plot and story arcs
+5,Sound Designer,Creates sound effects and audio environments for media,sound_designer,Sound designers record mix and edit sound for film and games
+73,Voice Actor,Provides voices for characters in animation and games,voice_actor,Voice actors express emotion and character through speech
+85,Sound Designer,Creates sound effects and audio environments for media,sound_designer,Sound designers record mix and edit sound for film and games
+92,VFX Artist,Adds visual effects to films and videos,vfx_artist,VFX artists composite simulate and enhance footage
+35,Production Designer,Designs sets and visual aesthetics of a production,production_designer,They craft immersive environments for film
+61,Animator,Creates animated images and characters for film and television or video games,animator,Animators work with 2D and 3D images using tools like Maya or Blender
+46,Storyboard Artist,Draws visual storyboards to plan films and animations,storyboard_artist,They visualize scripts and help directors plan production
+18,Broadcast Technician,Operates equipment for live and recorded broadcasts,broadcast_technician,They manage quality signals and transmission
+30,Cinematographer,Manages camera and lighting for film or TV shoots,cinematographer,Cinematographers shape the visual look of a project
+87,Motion Graphics Designer,Creates animated graphics and visual effects,motion_graphics,Motion designers use typography and video animation tools
+96,Game Designer,Designs game mechanics and narratives,game_designer,Game designers write storylines and create game logic
+16,Game Designer,Designs game mechanics and narratives,game_designer,Game designers write storylines and create game logic
+26,Storyboard Artist,Draws visual storyboards to plan films and animations,storyboard_artist,They visualize scripts and help directors plan production
+51,Digital Painter,Creates digital illustrations and concept art,digital_painter,Digital painters use tablets and painting software
+78,Broadcast Technician,Operates equipment for live and recorded broadcasts,broadcast_technician,They manage quality signals and transmission
+69,Scriptwriter,Writes screenplays for movies TV and digital content,scriptwriter,Scriptwriters craft dialogue plot and story arcs
+65,Sound Designer,Creates sound effects and audio environments for media,sound_designer,Sound designers record mix and edit sound for film and games
+20,Media Producer,Manages the production of multimedia projects,media_producer,Media producers coordinate creative teams
+100,Media Producer,Manages the production of multimedia projects,media_producer,Media producers coordinate creative teams
+45,Sound Designer,Creates sound effects and audio environments for media,sound_designer,Sound designers record mix and edit sound for film and games
+22,Video Editor,Edits and assembles raw footage into finished productions,video_editor,Video editors use Adobe Premiere Pro or Final Cut Pro to structure scenes
+49,Scriptwriter,Writes screenplays for movies TV and digital content,scriptwriter,Scriptwriters craft dialogue plot and story arcs
+77,Composer,Writes original music for film TV or games,composer,Composers create music to support storytelling
+82,Video Editor,Edits and assembles raw footage into finished productions,video_editor,Video editors use Adobe Premiere Pro or Final Cut Pro to structure scenes
+89,Scriptwriter,Writes screenplays for movies TV and digital content,scriptwriter,Scriptwriters craft dialogue plot and story arcs
+67,Motion Graphics Designer,Creates animated graphics and visual effects,motion_graphics,Motion designers use typography and video animation tools
+57,Composer,Writes original music for film TV or games,composer,Composers create music to support storytelling
+11,Digital Painter,Creates digital illustrations and concept art,digital_painter,Digital painters use tablets and painting software
+98,Broadcast Technician,Operates equipment for live and recorded broadcasts,broadcast_technician,They manage quality signals and transmission
+60,Media Producer,Manages the production of multimedia projects,media_producer,Media producers coordinate creative teams
+3,Graphic Designer,Designs visual content for print and digital media,graphic_designer,Graphic designers use Adobe Photoshop and Illustrator to create visual assets
+10,Cinematographer,Manages camera and lighting for film or TV shoots,cinematographer,Cinematographers shape the visual look of a project
+28,Film Director,Leads the creative aspects of film production,film_director,Directors guide artistic vision with actors and production teams
+81,Animator,Creates animated images and characters for film and television or video games,animator,Animators work with 2D and 3D images using tools like Maya or Blender
+19,Photographer,Captures still images for creative or commercial use,photographer,Photographers create visual stories through lenses
+43,Graphic Designer,Designs visual content for print and digital media,graphic_designer,Graphic designers use Adobe Photoshop and Illustrator to create visual assets
+32,VFX Artist,Adds visual effects to films and videos,vfx_artist,VFX artists composite simulate and enhance footage
+75,Production Designer,Designs sets and visual aesthetics of a production,production_designer,They craft immersive environments for film
+56,Game Designer,Designs game mechanics and narratives,game_designer,Game designers write storylines and create game logic
+58,Broadcast Technician,Operates equipment for live and recorded broadcasts,broadcast_technician,They manage quality signals and transmission
+6,Storyboard Artist,Draws visual storyboards to plan films and animations,storyboard_artist,They visualize scripts and help directors plan production
+95,Production Designer,Designs sets and visual aesthetics of a production,production_designer,They craft immersive environments for film
+54,Colorist,Adjusts color and tone for visual consistency in film,colorist,Colorists use tools like DaVinci Resolve for grading
+7,Motion Graphics Designer,Creates animated graphics and visual effects,motion_graphics,Motion designers use typography and video animation tools
+48,Film Director,Leads the creative aspects of film production,film_director,Directors guide artistic vision with actors and production teams
+79,Photographer,Captures still images for creative or commercial use,photographer,Photographers create visual stories through lenses
+84,3D Modeler,Builds 3D characters and environments for games and films,3d_modeler,3D modelers use Blender Maya or ZBrush to create visual models
+88,Film Director,Leads the creative aspects of film production,film_director,Directors guide artistic vision with actors and production teams
+34,Colorist,Adjusts color and tone for visual consistency in film,colorist,Colorists use tools like DaVinci Resolve for grading
+44,3D Modeler,Builds 3D characters and environments for games and films,3d_modeler,3D modelers use Blender Maya or ZBrush to create visual models
+17,Composer,Writes original music for film TV or games,composer,Composers create music to support storytelling
+38,Broadcast Technician,Operates equipment for live and recorded broadcasts,broadcast_technician,They manage quality signals and transmission
+71,Digital Painter,Creates digital illustrations and concept art,digital_painter,Digital painters use tablets and painting software
