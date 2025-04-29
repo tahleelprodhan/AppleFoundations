@@ -32,16 +32,19 @@ struct ContentView: View {
                     Button(action: { viewModel.dislike() }) {
                         Image(systemName: "x.circle")
                             .font(.largeTitle)
+                            .foregroundStyle(Color("gold_color"))
                     }
                     Spacer()
                     Button(action: { viewModel.undo() }) {
                         Image(systemName: "arrow.uturn.backward.circle")
                             .font(.largeTitle)
+                            .foregroundStyle(Color("gold_color"))
                     }
                     Spacer()
                     Button(action: { viewModel.like() }) {
                         Image(systemName: "checkmark.circle")
                             .font(.largeTitle)
+                            .foregroundStyle(Color("gold_color"))
                     }
                 }
                 .padding(.horizontal, UIScreen.main.bounds.width * 0.16)
