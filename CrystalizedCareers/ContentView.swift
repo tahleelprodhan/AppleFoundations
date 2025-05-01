@@ -33,21 +33,36 @@ struct ContentView: View {
                     Spacer()
                     HStack {
                         Button(action: { viewModel.dislike() }) {
-                            Image(systemName: "x.circle")
-                                .font(.largeTitle)
-                                .foregroundStyle(Color("gold_color"))
+                            VStack {
+                                Image(systemName: "x.circle")
+                                    .font(.largeTitle)
+                                    .foregroundStyle(Color("gold_color"))
+                                Text("Dislikes")
+                                    .font(.caption)
+                                    .foregroundStyle(Color("gold_color"))
+                            }
                         }
                         Spacer()
                         Button(action: { viewModel.undo() }) {
-                            Image(systemName: "arrow.uturn.backward.circle")
-                                .font(.largeTitle)
-                                .foregroundStyle(Color("gold_color"))
+                            VStack {
+                                Image(systemName: "arrow.uturn.backward.circle")
+                                    .font(.largeTitle)
+                                    .foregroundStyle(Color("gold_color"))
+                                Text("Undo")
+                                    .font(.caption)
+                                    .foregroundStyle(Color("gold_color"))
+                            }
                         }
                         Spacer()
                         Button(action: { viewModel.like() }) {
-                            Image(systemName: "checkmark.circle")
-                                .font(.largeTitle)
-                                .foregroundStyle(Color("gold_color"))
+                            VStack {
+                                Image(systemName: "checkmark.circle")
+                                    .font(.largeTitle)
+                                    .foregroundStyle(Color("gold_color"))
+                                Text("Likes")
+                                    .font(.caption)
+                                    .foregroundStyle(Color("gold_color"))
+                            }
                         }
                     }
                     .padding(.horizontal, UIScreen.main.bounds.width * 0.16)
